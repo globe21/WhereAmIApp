@@ -17,6 +17,7 @@
 		0C030A011B07FE20008E2308 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0309FF1B07FE20008E2308 /* FBSDKLoginKit.framework */; };
 		0C030A041B0800E3008E2308 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C030A031B0800E3008E2308 /* Bolts.framework */; };
 		0C030A071B0897C7008E2308 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C030A061B0897C7008E2308 /* FBSDKMessengerShareKit.framework */; };
+		0C07521B1B0944DF0058EE40 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C07521A1B0944DF0058EE40 /* CoreLocation.framework */; };
 		0CD9F6791B08D568005F3506 /* SendLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD9F6781B08D568005F3506 /* SendLocationViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		0C030A021B07FE45008E2308 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		0C030A031B0800E3008E2308 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../../../Documents/FacebookSDK/Bolts.framework; sourceTree = "<group>"; };
 		0C030A061B0897C7008E2308 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = ../../../Documents/FacebookSDK/FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		0C07521A1B0944DF0058EE40 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0CD9F6781B08D568005F3506 /* SendLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendLocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C07521B1B0944DF0058EE40 /* CoreLocation.framework in Frameworks */,
 				0C030A071B0897C7008E2308 /* FBSDKMessengerShareKit.framework in Frameworks */,
 				0C030A041B0800E3008E2308 /* Bolts.framework in Frameworks */,
 				0C030A001B07FE20008E2308 /* FBSDKCoreKit.framework in Frameworks */,
@@ -74,6 +77,7 @@
 		0C0309D01B07EDC0008E2308 = {
 			isa = PBXGroup;
 			children = (
+				0C07521A1B0944DF0058EE40 /* CoreLocation.framework */,
 				0C030A051B0806B1008E2308 /* Facebook Frameworks */,
 				0C0309DB1B07EDC0008E2308 /* WhereAmIApp */,
 				0C0309F11B07EDC0008E2308 /* WhereAmIAppTests */,

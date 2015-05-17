@@ -10,9 +10,10 @@ import UIKit
 
 class LoginWithFBViewController: UIViewController,  FBSDKLoginButtonDelegate {
 
+    @IBOutlet weak var btnSendLocation: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         if (FBSDKAccessToken.currentAccessToken() != nil)
         {
@@ -27,9 +28,29 @@ class LoginWithFBViewController: UIViewController,  FBSDKLoginButtonDelegate {
             loginView.readPermissions = ["public_profile", "email", "user_friends"]
             loginView.delegate = self
         }
-        
     }
     
+    override func viewDidAppear(animated: Bool) {
+        
+        if (FBSDKAccessToken.currentAccessToken() != nil){
+            btnSendLocation.hidden = false
+        }
+        else {
+            btnSendLocation.hidden = true
+        }
+        
+            let loginView : FBSDKLoginButton = FBSDKLoginButton()
+            self.view.addSubview(loginView)
+            loginView.center = self.view.center
+            loginView.readPermissions = ["public_profile", "email", "user_friends"]
+            loginView.delegate = self
+        
+
+    }
+    
+    @IBAction func sendLocation(sender: AnyObject) {
+        self.performSegueWithIdentifier("send_loc", sender: self)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -61,7 +82,7 @@ class LoginWithFBViewController: UIViewController,  FBSDKLoginButtonDelegate {
     }
     
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
-        println("User Logged Out")
+        btnSendLocation.hidden = true
     }
     
     func returnUserData()
