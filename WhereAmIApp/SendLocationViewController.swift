@@ -14,6 +14,7 @@ class SendLocationViewController: UIViewController, CLLocationManagerDelegate, F
     @IBOutlet weak var btnSendImage: UIView!
     @IBOutlet weak var messageView: UIView!
     @IBOutlet weak var lblMessage: UILabel!
+    @IBOutlet weak var lblLocation: UILabel!
     
     let locationManager = CLLocationManager()
     
