@@ -26,14 +26,11 @@ class SendFutureLocationViewController: UIViewController, UITextFieldDelegate {
         var buttonWidth = CGFloat(80)
         var fbBtn = FBSDKMessengerShareButton.circularButtonWithStyle(.Blue,  width:buttonWidth)
         fbBtn.addTarget(self, action: "_shareButtonPressed:" , forControlEvents: .TouchUpInside)
-        //        fbBtn.sizeThatFits(CGSize(width: 200, height: 45))
-        //setting for fbBtn if needed
         self.btnSendImage.addSubview(fbBtn)
         
         self.txtDate.delegate = self
         datePicker.backgroundColor = UIColor(red: 42, green: 140, blue: 162, alpha: 1)
         datePicker.addTarget(self, action: Selector("datePickerChanged:"), forControlEvents: UIControlEvents.ValueChanged)
-        // Do any additional setup after loading the view.
     }
  
     override func viewDidAppear(animated: Bool) {
@@ -62,8 +59,6 @@ class SendFutureLocationViewController: UIViewController, UITextFieldDelegate {
             let sharingImage = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()
             
-            //  UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
-            
             if sharingImage != nil {
                 FBSDKMessengerSharer.shareImage(sharingImage, withOptions: nil)
                 lblMessage.hidden = true
@@ -80,9 +75,7 @@ class SendFutureLocationViewController: UIViewController, UITextFieldDelegate {
                 
             }
             alertController.addAction(OKAction)
-            self.presentViewController(alertController, animated: true) {
-                // ...
-            }
+            self.presentViewController(alertController, animated: true) {}
         }
     }
 
@@ -115,43 +108,5 @@ class SendFutureLocationViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
-        println("User Logged In")
-        
-        if ((error) != nil)
-        {
-            // Process error
-        }
-        else if result.isCancelled {
-            // Handle cancellations
-        }
-        else {
-            // If you ask for multiple permissions at once, you
-            // should check if specific permissions missing
-            if result.grantedPermissions.contains("email")
-            {
-                self.performSegueWithIdentifier("send_loc", sender: self)
-            }
-            
-            //  self.returnUserData()
-        }
-        
-    }
-    
-    func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
-        println("User Logged Out")
-        self.navigationController?.popViewControllerAnimated(true)
-    }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+   
 }

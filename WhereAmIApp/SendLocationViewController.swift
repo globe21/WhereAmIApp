@@ -23,8 +23,6 @@ class SendLocationViewController: UIViewController, CLLocationManagerDelegate, F
         
         var fbBtn = FBSDKMessengerShareButton.circularButtonWithStyle(.Blue)
         fbBtn.addTarget(self, action: "_shareButtonPressed:" , forControlEvents: .TouchUpInside)
-//        fbBtn.sizeThatFits(CGSize(width: 200, height: 45))
-        //setting for fbBtn if needed
         self.btnSendImage.addSubview(fbBtn)
         
     }
@@ -34,7 +32,9 @@ class SendLocationViewController: UIViewController, CLLocationManagerDelegate, F
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
         locationManager.requestWhenInUseAuthorization()
-        locationManager.startUpdatingLocation()
+        dispatch_async(dispatch_get_main_queue()) {
+        self.locationManager.startUpdatingLocation()
+        }
     }
 
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
@@ -80,8 +80,6 @@ class SendLocationViewController: UIViewController, CLLocationManagerDelegate, F
             messageView.layer.renderInContext(UIGraphicsGetCurrentContext())
             let sharingImage = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()
-            
-            //  UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
             
             if sharingImage != nil {
                 FBSDKMessengerSharer.shareImage(sharingImage, withOptions: nil)

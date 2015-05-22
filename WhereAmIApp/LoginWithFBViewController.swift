@@ -44,7 +44,6 @@ class LoginWithFBViewController: UIViewController,  FBSDKLoginButtonDelegate {
             loginView.center = self.view.center
             loginView.readPermissions = ["public_profile", "email", "user_friends"]
             loginView.delegate = self
-        
 
     }
     
@@ -76,7 +75,6 @@ class LoginWithFBViewController: UIViewController,  FBSDKLoginButtonDelegate {
                 self.performSegueWithIdentifier("send_loc", sender: self)
             }
             
-            self.returnUserData()
         }
         
     }
@@ -85,27 +83,6 @@ class LoginWithFBViewController: UIViewController,  FBSDKLoginButtonDelegate {
         btnSendLocation.hidden = true
     }
     
-    func returnUserData()
-    {
-        let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: nil)
-        graphRequest.startWithCompletionHandler({ (connection, result, error) -> Void in
-            
-            if ((error) != nil)
-            {
-                // Process error
-                println("Error: \(error)")
-            }
-            else
-            {
-                println("fetched user: \(result)")
-                let userName : NSString = result.valueForKey("name") as! NSString
-                println("User Name is: \(userName)")
-                let userEmail : NSString = result.valueForKey("email") as! NSString
-                println("User Email is: \(userEmail)")
-            }
-        })
-    }
-
 
 }
 
