@@ -13,15 +13,15 @@
 		0C0309E61B07EDC0008E2308 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C0309E51B07EDC0008E2308 /* Images.xcassets */; };
 		0C0309E91B07EDC0008E2308 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C0309E71B07EDC0008E2308 /* LaunchScreen.xib */; };
 		0C0309F51B07EDC0008E2308 /* WhereAmIAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0309F41B07EDC0008E2308 /* WhereAmIAppTests.swift */; };
-		0C030A001B07FE20008E2308 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0309FE1B07FE20008E2308 /* FBSDKCoreKit.framework */; };
-		0C030A011B07FE20008E2308 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0309FF1B07FE20008E2308 /* FBSDKLoginKit.framework */; };
-		0C030A041B0800E3008E2308 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C030A031B0800E3008E2308 /* Bolts.framework */; };
-		0C030A071B0897C7008E2308 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C030A061B0897C7008E2308 /* FBSDKMessengerShareKit.framework */; };
 		0C07521B1B0944DF0058EE40 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C07521A1B0944DF0058EE40 /* CoreLocation.framework */; };
 		0C21C4B61B0BE0E40021762C /* SelectLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C21C4B51B0BE0E40021762C /* SelectLocationViewController.swift */; };
 		0C21C4BA1B0BEC490021762C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C21C4B91B0BEC490021762C /* MapKit.framework */; };
 		0C21C4C11B0C0C380021762C /* SendFutureLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C21C4C01B0C0C380021762C /* SendFutureLocationViewController.swift */; };
 		0CD9F6791B08D568005F3506 /* SendLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD9F6781B08D568005F3506 /* SendLocationViewController.swift */; };
+		0CDEA7A81B108AA700E8EAC7 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CDEA7A41B108AA700E8EAC7 /* Bolts.framework */; };
+		0CDEA7A91B108AA700E8EAC7 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CDEA7A51B108AA700E8EAC7 /* FBSDKCoreKit.framework */; };
+		0CDEA7AA1B108AA700E8EAC7 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CDEA7A61B108AA700E8EAC7 /* FBSDKLoginKit.framework */; };
+		0CDEA7AB1B108AA700E8EAC7 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CDEA7A71B108AA700E8EAC7 /* FBSDKMessengerShareKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,16 +45,16 @@
 		0C0309EE1B07EDC0008E2308 /* WhereAmIAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhereAmIAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C0309F31B07EDC0008E2308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C0309F41B07EDC0008E2308 /* WhereAmIAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhereAmIAppTests.swift; sourceTree = "<group>"; };
-		0C0309FE1B07FE20008E2308 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		0C0309FF1B07FE20008E2308 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		0C030A021B07FE45008E2308 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		0C030A031B0800E3008E2308 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../../../Documents/FacebookSDK/Bolts.framework; sourceTree = "<group>"; };
-		0C030A061B0897C7008E2308 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = ../../../Documents/FacebookSDK/FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
 		0C07521A1B0944DF0058EE40 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0C21C4B51B0BE0E40021762C /* SelectLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectLocationViewController.swift; sourceTree = "<group>"; };
 		0C21C4B91B0BEC490021762C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0C21C4C01B0C0C380021762C /* SendFutureLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendFutureLocationViewController.swift; sourceTree = "<group>"; };
 		0CD9F6781B08D568005F3506 /* SendLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendLocationViewController.swift; sourceTree = "<group>"; };
+		0CDEA7A41B108AA700E8EAC7 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "Facebook Frameworks/Bolts.framework"; sourceTree = "<group>"; };
+		0CDEA7A51B108AA700E8EAC7 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "Facebook Frameworks/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		0CDEA7A61B108AA700E8EAC7 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "Facebook Frameworks/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		0CDEA7A71B108AA700E8EAC7 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = "Facebook Frameworks/FBSDKMessengerShareKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,12 +62,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CDEA7A81B108AA700E8EAC7 /* Bolts.framework in Frameworks */,
+				0CDEA7A91B108AA700E8EAC7 /* FBSDKCoreKit.framework in Frameworks */,
+				0CDEA7AA1B108AA700E8EAC7 /* FBSDKLoginKit.framework in Frameworks */,
 				0C21C4BA1B0BEC490021762C /* MapKit.framework in Frameworks */,
+				0CDEA7AB1B108AA700E8EAC7 /* FBSDKMessengerShareKit.framework in Frameworks */,
 				0C07521B1B0944DF0058EE40 /* CoreLocation.framework in Frameworks */,
-				0C030A071B0897C7008E2308 /* FBSDKMessengerShareKit.framework in Frameworks */,
-				0C030A041B0800E3008E2308 /* Bolts.framework in Frameworks */,
-				0C030A001B07FE20008E2308 /* FBSDKCoreKit.framework in Frameworks */,
-				0C030A011B07FE20008E2308 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,10 +147,10 @@
 		0C030A051B0806B1008E2308 /* Facebook Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0C030A061B0897C7008E2308 /* FBSDKMessengerShareKit.framework */,
-				0C030A031B0800E3008E2308 /* Bolts.framework */,
-				0C0309FE1B07FE20008E2308 /* FBSDKCoreKit.framework */,
-				0C0309FF1B07FE20008E2308 /* FBSDKLoginKit.framework */,
+				0CDEA7A41B108AA700E8EAC7 /* Bolts.framework */,
+				0CDEA7A51B108AA700E8EAC7 /* FBSDKCoreKit.framework */,
+				0CDEA7A61B108AA700E8EAC7 /* FBSDKLoginKit.framework */,
+				0CDEA7A71B108AA700E8EAC7 /* FBSDKMessengerShareKit.framework */,
 			);
 			name = "Facebook Frameworks";
 			sourceTree = "<group>";
@@ -389,6 +389,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/ugur/Documents/FacebookSDK,
+					"$(PROJECT_DIR)/Facebook",
+					Frameworks,
 				);
 				INFOPLIST_FILE = WhereAmIApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -404,6 +406,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/ugur/Documents/FacebookSDK,
+					"$(PROJECT_DIR)/Facebook",
+					Frameworks,
 				);
 				INFOPLIST_FILE = WhereAmIApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
