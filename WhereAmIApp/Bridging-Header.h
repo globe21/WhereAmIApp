@@ -11,7 +11,6 @@
 
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKMessengerShareKit/FBSDKMessengerShareKit.h>
 
 #endif

@@ -103,7 +103,7 @@
                         <viewControllerLayoutGuide type="bottom" id="TiG-r5-cE6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="T6U-Py-y1e">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="h0E-pA-j9W">
@@ -491,7 +491,6 @@ LS0gLyAtLSAvIC0tLS0DIC0tIDogLS0
                     </view>
                     <tabBarItem key="tabBarItem" title="Future Location" image="futureloc" id="e24-dg-RNq"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="btnSendImage" destination="O6E-Hi-Ch5" id="Ld4-pY-LUi"/>
                         <outlet property="datePicker" destination="nBx-vw-71c" id="O3O-91-Ruu"/>
@@ -515,7 +514,7 @@ LS0gLyAtLSAvIC0tLS0DIC0tIDogLS0
                         <viewControllerLayoutGuide type="bottom" id="I6i-ps-cgR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dw3-Yh-nOg">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hBf-b5-mqt">
